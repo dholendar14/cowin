@@ -1,3 +1,3 @@
 # cowin
 
-![](images/Capture.png)
+![](images/Capture.PNG)
