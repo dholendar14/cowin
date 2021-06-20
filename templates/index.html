@@ -61,9 +61,47 @@
         <h4>Address</h4>
         <div class="container ">
         </div>
-        <div class="card">
-            <div class="card-body">
-                <h2>{{address}} {{dose}}</h2>
+        
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h1 class="text-center">Address</h1>
+                </div>
+                <div class="col">
+                    <h1 class="text-center">Doses Available</h1>
+                </div>
+                <div class="col">
+                    <h2 class="text-center" >First dose</h2>
+                </div>
+                <div class="col">
+                    <h2 class="text-center" >Second dose</h2>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    {%for i in res%}
+                        <p class="text-center" >{{i[0]}}</p>
+                    {%endfor%}
+                </div>
+                <div class="col">
+                    {%for i in res%}
+                        <p class="text-center" >{{i[1]}}</p>
+                    {%endfor%}
+                </div>
+                
+                <div class="col">
+                    {%for i in res%}
+                        <p class="text-center" >{{i[2]}}</p>
+                    {%endfor%}
+                </div>
+                <div class="col">
+                    {%for i in res%}
+                        <p class="text-center" >{{i[3]}}</p>
+                    {%endfor%}
+                </div>
+                
             </div>
         </div>
     </div>
